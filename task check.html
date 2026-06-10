@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Clearwave Landing Page</title>
+
+<style>
+
+body{font-family:Arial,sans-serif;background:#eaf7f4;color:#092521}
+.navbar{height:80px;padding:0 12%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:700}
+nav a,.signin{margin:0 18px;font-size:14px;color:#31544f;text-decoration:none}
+button{background:#178b7b;color:white;border:0;padding:14px 28px;border-radius:30px;font-weight:700;box-shadow:0 10px 25px rgba(23,139,123,.25)}
+.hero{min-height:620px;padding:100px 14%;display:flex;align-items:center;justify-content:space-between}
+.badge{background:white;color:#178b7b;padding:8px 16px;border-radius:20px;font-size:12px;font-weight:700}
+h1{font-size:64px;line-height:1.05;margin:30px 0}
+h2{font-size:48px;text-align:center;margin:25px 0}
+em{font-family:Georgia,serif;color:#178b7b}
+.hero p,.mobile p,.features p{color:#55716d;line-height:1.8;max-width:480px}
+.demo{margin-left:20px;color:#178b7b;font-weight:700}
+.dashboard-card,.mock-card,.price-card,.review-grid div{background:white;border-radius:22px;padding:35px;box-shadow:0 20px 50px rgba(0,0,0,.08)}
+.dashboard-card{width:380px}
+.bars{display:flex;gap:12px;align-items:end;height:120px}
+.bars span{flex:1;background:#178b7b;border-radius:5px}
+.bars span:nth-child(1){height:30px;opacity:.15}
+.bars span:nth-child(2){height:55px;opacity:.2}
+.bars span:nth-child(3){height:70px}
+.bars span:nth-child(4){height:85px;opacity:.25}
+.bars span:nth-child(5){height:95px}
+.stats{display:flex;gap:12px}
+.stats div{background:#eaf7f4;padding:18px;border-radius:14px;font-size:12px}
+.brands,.mobile,.pricing,.reviews{padding:80px 12%;text-align:center}
+.brands div{display:flex;justify-content:space-between;margin-top:35px;color:#55716d}
+.phones{display:flex;justify-content:center;gap:35px;margin-top:70px}
+.phone{width:150px;height:300px;border-radius:28px;background:white;box-shadow:0 20px 45px rgba(0,0,0,.12)}
+.phone.dark{background:#092521}
+.phone.center{width:190px;height:380px;background:#f8fff7}
+.features{padding:100px 14%}
+.feature-row{display:flex;justify-content:space-between;align-items:center;margin:90px 0;gap:80px}
+.feature-row>div{flex:1}
+.feature-row h3{font-size:36px;margin:20px 0}
+.mock-card{height:250px}
+ul{margin-top:25px;list-style:none}
+li{margin:12px 0;color:#55716d}
+li::before{content:"✓ ";color:#178b7b}
+.numbers{display:grid;grid-template-columns:repeat(4,1fr);padding:70px 14%;border-top:1px solid #d4e7e3;border-bottom:1px solid #d4e7e3}
+.numbers b{font-size:42px}
+.cards{display:flex;justify-content:center;gap:30px;margin-top:60px}
+.price-card{width:280px;text-align:left}
+.price-card h3{font-size:44px;margin:25px 0}
+.popular{background:#092521;color:white;transform:scale(1.08)}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;margin-top:60px;text-align:left}
+.faq{display:grid;grid-template-columns:1fr 2fr;padding:90px 14%;gap:80px}
+.faq h2{text-align:left}
+.faq p{padding:24px 0;border-bottom:1px solid #d4e7e3}
+.cta{margin:80px auto;width:75%;background:#092521;color:white;padding:70px;border-radius:28px}
+.cta h2{text-align:left}
+footer{background:#092521;color:white;padding:70px 14%;display:grid;grid-template-columns:repeat(4,1fr);gap:50px}
+footer p{color:#8aa39f;line-height:2}
+@media(max-width:900px){
+.hero,.feature-row,.cards,.phones{flex-direction:column;display:flex}
+.numbers,.review-grid,.faq,footer{grid-template-columns:1fr}
+h1{font-size:46px}
+nav{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">clearwave</div>
+  <nav>
+    <a href="#"><button>App</button></a><a href="#"><button>Features</button></a><a href="#"><button>Pricing</button></a><a href="#"><button>Reviews</button></a><a href="#"><button>FAQ</button></a>
+  </nav>
+  <div><a class="signin">Sign in</a><button>Start Free Trial</button></div>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <span class="badge">★ Rated #1 Productivity SaaS of 2024</span>
+    <h1>Your workflow,<br><em>finally clear.</em></h1>
+    <p>Clearwave unifies your team’s projects, data, and communication into one calm, focused surface.</p><br>
+    <button>Start Free — No Card →</button>
+    <a class="demo">▶See it in action</a>
+  </div>
+
+  <div class="dashboard-card">
+    <h3>Team Performance</h3>
+    <div class="bars"><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="stats">
+      <div><b>94%</b><br>Task Rate</div>
+      <div><b>2.4k</b><br>Active Users</div>
+      <div><b>18h</b><br>Saved / week</div>
+    </div>
+  </div>
+</section>
+
+<section class="brands">
+  <p>TRUSTED BY FORWARD-THINKING TEAMS AT</p>
+  <div><span>Nexaflow</span><span>Meridian</span><span>Vanta Labs</span><span>Pulsar HQ</span><span>Arclight</span></div>
+</section>
+
+<section class="mobile">
+  <span class="badge">● MOBILE APP</span>
+  <h2>Your workspace,<br><em>in your pocket</em></h2>
+  <p>The Clearwave mobile app brings every dashboard, task, and notification to you.</p>
+  <div class="phones">
+    <div class="phone light"></div><div class="phone dark"></div><div class="phone center"></div><div class="phone dark"></div><div class="phone light"></div>
+  </div>
+</section>
+
+<section class="features">
+  <span class="badge">● PLATFORM FEATURES</span>
+  <h2>Built for <em>clarity</em><br>at every scale</h2>
+
+  <div class="feature-row">
+    <div>
+      <small>01 — UNIFIED DASHBOARD</small>
+      <h3>Every metric, one calm surface</h3>
+      <p>Pull data from any source into a single, composable view.</p>
+      <ul><li>Drag-and-drop widget builder</li><li>Real-time data sync</li><li>Role-based sharing</li></ul>
+    </div>
+    <div class="mock-card"></div>
+  </div>
+
+  <div class="feature-row">
+    <div class="mock-card"></div>
+    <div>
+      <h3>Routines that run <em>themselves</em></h3>
+      <p>Build automation flows with natural language.</p>
+      <ul><li>Natural language automation</li><li>500+ trigger templates</li><li>Full audit trail</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="numbers">
+  <div><b>17k+</b><br>Teams Worldwide</div>
+  <div><b>11%</b><br>Avg. Productivity Gain</div>
+  <div><b>34.3%</b><br>Uptime SLA</div>
+  <div><b>6h</b><br>Saved Weekly</div>
+</section>
+
+<section class="pricing">
+  <span class="badge">● PRICING</span>
+  <h2>Simple, <em>transparent</em> pricing</h2>
+  <div class="cards">
+    <div class="price-card"><h4>STARTER</h4><h3>$20 <small>/ mo</small></h3><p>For individuals and small teams.</p><br><button>Start Free Trial</button></div>
+    <div class="price-card popular"><h4>PROFESSIONAL</h4><h3>$60 <small>/ mo</small></h3><p>For growing teams with automation.</p><br><button>Start Free Trial</button></div>
+    <div class="price-card"><h4>ENTERPRISE</h4><h3>$150 <small>/ mo</small></h3><p>For large organizations.</p><br><button>Contact Sales</button></div>
+  </div>
+</section>
+
+<section class="reviews">
+  <h2>Teams that <em>love</em> Clearwave</h2>
+  <div class="review-grid">
+    <div>★★★★★<p>“We replaced three separate tools with Clearwave.”</p></div>
+    <div>★★★★★<p>“The mobile app alone justified the switch.”</p></div>
+    <div>★★★★★<p>“Onboarding our team took one afternoon.”</p></div>
+  </div>
+</section>
+
+<section class="faq">
+  <h2>Questions,<br><em>answered</em></h2>
+  <div>
+    <p>Is there a free trial? +</p>
+    <p>How does pricing work? +</p>
+    <p>Can I migrate data? +</p>
+    <p>Is my data secure? +</p>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Ready for a<br><em>clearer workflow?</em></h2>
+  <p>Join 50,000+ teams who replaced chaos with clarity.</p><br>
+  <button>Start Free Trial →</button>
+</section>
+
+<footer>
+  <div><h3>clearwave</h3><p>The calm, powerful workspace for teams.</p></div>
+  <div><h4>PRODUCT</h4><p>Features<br>Mobile App<br>Pricing<br>Integrations</p></div>
+  <div><h4>COMPANY</h4><p>About<br>Blog<br>Careers<br>Status</p></div>
+  <div><h4>SUPPORT</h4><p>Help Center<br>Documentation<br>Contact</p></div>
+</footer>
+
+</body>
+</html>
